@@ -15,37 +15,50 @@ for i in month :
         start = 0
         if i%2 == 1 :
             for idx in range(start,last1+div,div):
+                print ("",sep='\n')
                 out = day1[start:start+div]
-                outs =str(out)
-                if out != [] :
-                    print("".join(outs))
-                    start += div  
+                start += div
+                for x in out :
+                    if out != [] :
+                        i = str(x)
+                        print(i.center(2), end = " ")
+
         else :
             for idx in range(start,last2+div,div):
+                print ("",sep='\n')
                 out = day2[start:start+div]
-                outs =str(out)
-                if out != [] :
-                    print("".join(outs))
-                    start += div   
+                start += div  
+                for x in out :
+                    if out != [] :
+                        i = str(x)
+                        print(i.center(2), end = " ")
+                         
     else :
         start = 0
         if i%2 == 0 :     
             for idx in range(start,last1+div,div):
+                print ("",sep='\n')
                 out = day1[start:start+div]
-                outs =str(out)
-                if out != [] :
-                    print("".join(outs))
-                    start += div 
+                start += div  
+                for x in out :
+                    if out != [] :
+                        i = str(x)
+                        print(i.center(2), end = " ")
         else :
             for idx in range(start,last2+div,div):
+                print ("",sep='\n')
                 out = day2[start:start+div]
-                outs =str(out)
-                if out != [] :
-                    print("".join(outs))
-                    start += div     
+                start += div  
+                for x in out :
+                    if out != [] :
+                        i = str(x)
+                        print(i.center(2), end = " ")
+     
 
-## 두개의 차이점이 무엇일까?
-out = str(list(range(0,5)))
-print("".join(out))
-out = ['a','s','d']
-print("".join(out))
+# ## 두개의 차이점이 무엇일까?
+# out = str(list(range(0,5)))
+# print("".join(out))
+# out = ['a','s','d']
+# print("-".join(out))
+# for x in range(0,5):
+#     print(x, end = " ")
