@@ -10,7 +10,7 @@ div = 7
 for i in month :
     a = str(i)+"월"
     print(a.center(20))
-    print("".join(week))
+    print("".join(week),end="")
     if i < 7 :
         start = 0
         if i%2 == 1 :
@@ -53,6 +53,7 @@ for i in month :
                     if out != [] :
                         i = str(x)
                         print(i.center(2), end = " ")
+    print()    
      
 
 # ## 두개의 차이점이 무엇일까?
