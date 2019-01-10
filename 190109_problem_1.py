@@ -59,7 +59,19 @@ print(octal(10))
 #     list_data = [1,2,3,4,5]
 #     center_value(list_data) => 3
 
-list_data = [1,2,3,4,5,6,7]
+list_data = [1,1,1,1,2,6,7]
+list_data.sort()
 def center_value(lists) :
-    return lists[int(len(lists)/2)]
+    a = 0
+    for i in range(1,len(lists)) :
+        if len(lists)%2 != 0 :
+            if lists[a] != lists[-i] :
+                a += 1
+            else :
+                return lists[a]
+        else :
+            if lists[a] != lists[-i] :
+                a += 1
+                if a == len(lists)/2 :
+                    return (lists[a-1],lists[a])
 print(center_value(list_data))
