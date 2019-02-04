@@ -1,3 +1,5 @@
+# https://swexpertacademy.com/main/solvingProblem/solvingProblem.do
+
 def building(T):
    building = list(map(int, input().split()))
    e = []
