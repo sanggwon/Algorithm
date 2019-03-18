@@ -1,5 +1,3 @@
-import sys
-sys.stdin = open("input.txt", "r")
 for tc in range(1, int(input())+1):
     N,X = map(int,input().split())
     airstrip = [list(map(int,input().split())) for _ in range(N)]
