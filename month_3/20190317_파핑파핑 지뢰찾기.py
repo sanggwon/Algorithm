@@ -29,7 +29,7 @@ def bfs(paping, n, m) :
                     q.append((ni,nj))
                 paping[ni][nj] = -2
 
-for tc in range(1, int(input()) + 1):
+for tc in range(1, int(input()) + 1) :
     N = int(input())
     paping = [list(input()) for _ in range(N)]
     idx_i = [-1, -1, -1, 0, 1, 1, 1, 0]
